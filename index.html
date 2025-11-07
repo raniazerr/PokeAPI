@@ -2,27 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=!, initial-scale=1.0">    
-    <title>POKEDEX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Pokedex</title>
     <link rel="stylesheet" href="elstyle.css">
     <script type="module" src="javascript.js"> </script>
 </head>
 <body>
-    <h1>Pokedex 🌸</h1>
 
     <div id="app">
-    <!-- <div class="loading" id="loading">Chargement...</div> -->
+        <div class="game-console">
+            <div class="console-top">
+                <div class="console-brand">POKEDEX</div>
+                <div class="power-light"></div>
+            </div>
+ <div class="game-screen">
+      <div class="scanlines"></div>
+        <div class="screen-glare"></div>
+            <div class="screen-content">
+                <div class="game-ui">
+                    <div class="status-bar">
+                        <div class="player-info">
+                            <span class="player-label">PLAYER</span>
+                              <div class="health-bar">
+                                  <div class="health-fill"></div>
+                              </div>
+                        </div>
+                    <div class="logo"><img src="images/LOGO.png" alt="Logo"></div>
+                </div>
 
+          <div class="game-message" id="game-message">POKEMON</div>
+<div class="game-form">
     <!-- los pokemonos -->
     <div id="pokemonContainer">
      <img id="pokemonImage" alt="Image du Pokémon" />
 
-
+<div class="pixel-divider">
+      <div class="divider-line"></div>
+        <div class="divider-line"></div>
+  </div>
       <div id="pokemonInfo">
-        <span>ID: </span><span id="pokemonId"></span> 
+        <span>Id: </span><span id="pokemonId"></span> 
         <br>
         <br>
-        <span>Nom: </span><span id="pokemonName"></span> 
+        <span>Name: </span><span id="pokemonName"></span> 
         <br>
         <br>
         <span>Types: </span> <span id="pokemonTypes"></span>
@@ -31,12 +53,38 @@
   <br>
   <br>
   <br>
-    <div class="button-container">
-      <button id="prevButton">Précédent</button>
-      <button id="nextButton">Suivant</button>
-    </div>
   </div>
+  </div>
+   
+  </div>
+</div>
 
+<div class="console-controls">
+    <div class="control-section dpad">
+        <button id="dpad-up" class="dpad-up control-btn"></button>
+        <button id="prevButton" class="dpad-left control-btn"></button>
+        <button id="dpad-down" class="dpad-down control-btn"></button>
+        <button id="nextButton" class="dpad-right control-btn"></button>
+        <button id="dpad-center" class="dpad-center control-btn"></button>
+    </div>
+                
+                <div class="control-section action-btns">
+                    <div class="action-btn btn-b control-btn"></div>
+                    <div class="action-btn btn-a control-btn"></div>
+                </div>
+                
+                <div class="control-section menu-btns">
+                    <div class="menu-btn select control-btn">SELECT</div>
+                    <div class="menu-btn start control-btn">START</div>
+                </div>
+            </div>
+            
+            <div class="console-bottom">
+                <div class="console-vent"></div>
+                <div class="console-vent"></div>
+                <div class="console-vent"></div>
+            </div>
+        
   
 </body>
 </html>
