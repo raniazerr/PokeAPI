@@ -1,4 +1,3 @@
-/* Pixel Art/Retro Gaming Theme Login Design - Day 17 */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
@@ -97,6 +96,7 @@ img,
     transform: translateX(-50%);
     z-index: 100;
     min-width: 450px;
+    max-width: 450px;
 }
 
 .console-top {
@@ -140,6 +140,7 @@ img,
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;
+    max-height: 480px;
 }
 
 .scanlines {
@@ -200,6 +201,19 @@ img,
         filter: brightness(1);
     }
 }
+
+#pokemonImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 38%; 
+    height: auto; 
+}
+
+#pokemonInfo {
+    margin-top: 50px; 
+}
+
 
 /* Game UI */
 .game-ui {
@@ -274,12 +288,6 @@ img,
     flex: 1;
     height: var(--pixel-size);
     background-color: var(--medium-gray);
-}
-
-.divider-text {
-    padding: 0 10px;
-    font-size: 8px;
-    color: var(--light-gray);
 }
 
 
